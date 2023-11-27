@@ -79,6 +79,47 @@
                 </div>
             </div>
         </div>
+
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQua" aria-expanded="false" aria-controls="collapseQua">
+                    Exemplo 1
+                </button>
+            </h3>
+            <div id="collapseQua" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        <strong>Há duas maneiras de construir uma expressão regular:</strong>
+
+                        Usando uma expressão literal, que consiste em um padrão fechado entre barras, como o exemplo a seguir:
+
+                        <code>const re = /ab+c/;</code>
+
+                        As expressões regulares na forma literal são compiladas quando o script é carregado. Esta forma de construção possui melhor performace quando a expressão regular utilizada é uma constante, ou seja, não muda durante a execução.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQui" aria-expanded="false" aria-controls="collapseQui">
+                    Exemplo 2
+                </button>
+            </h3>
+            <div id="collapseQui" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        <strong>Ou chamando o construtor do objeto:</strong>
+
+                        <code>let re = new RegExp("ab+c");</code>
+
+                        Usando o construtor, a compilação da expressão regular é realizada em tempo de execução. Use o construtor quando souber que o padrão da expressão regular irá mudar ou quando o padrão for desconhecido, oriundo de outra fonte, uma entrada de usuário por exemplo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <h2 class="text-center">Troca de Imagem</h2>
         <main class="container d-flex align-items-center justify-content-center">
             <section id="galeria-troca">
